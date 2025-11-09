@@ -100,10 +100,22 @@ REPORT_TYPE_TO_TEMPERATURE = {
 }
 
 app = Flask(__name__)
-CORS(app)  # <- enable CORS for all origins and all routes
 
-@app.route('/generate_report', methods=['POST', 'GET', 'OPTIONS', 'PUT', 'DELETE'])
+# Enable CORS for all routes and origins
+CORS(app, resources={
+    r"/*": {
+        "origins": "*",
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization"]
+    }
+})
+
+@app.route('/generate_report', methods=['POST', 'OPTIONS'])
 def generate_report():
+    # Handle OPTIONS preflight request
+    if request.method == 'OPTIONS':
+        return '', 204
+    
     data = request.json or {}
     topic = data.get("topic", "").strip()
     mode  = data.get("mode", "overview").strip().lower()
