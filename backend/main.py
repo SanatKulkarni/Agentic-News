@@ -1,11 +1,10 @@
-# app.py
-
-import os
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 from strands import Agent, tool
 from strands.models import BedrockModel
 from strands_tools import http_request
+from flask_cors import CORS  
+import os
 
 load_dotenv()
 
@@ -72,6 +71,7 @@ def query_news_api(query: str, from_time: str = None, to_time: str = None, limit
 
 @tool
 def analyze_sentiment(text: str) -> dict:
+    # stub
     return {"positive": 0.0, "negative": 0.0, "neutral": 0.0}
 
 @tool
@@ -100,12 +100,13 @@ REPORT_TYPE_TO_TEMPERATURE = {
 }
 
 app = Flask(__name__)
+CORS(app)  # <- enable CORS for all origins and all routes
 
-@app.route('/generate_report', methods=['POST'])
+@app.route('/generate_report', methods=['POST', 'GET', 'OPTIONS', 'PUT', 'DELETE'])
 def generate_report():
     data = request.json or {}
     topic = data.get("topic", "").strip()
-    mode = data.get("mode", "overview").strip().lower()
+    mode  = data.get("mode", "overview").strip().lower()
     report_type = data.get("report_type", "short").strip().lower()
 
     if not topic:
