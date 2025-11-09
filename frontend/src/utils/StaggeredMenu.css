@@ -328,6 +328,11 @@
   opacity: var(--sm-num-opacity, 0);
 }
 
+/* Make close button black when menu is open */
+.staggered-menu-wrapper[data-open] .sm-toggle {
+  color: #000000 !important;
+}
+
 @media (max-width: 1024px) {
   .staggered-menu-panel {
     width: 100%;
@@ -337,6 +342,10 @@
 
   .staggered-menu-wrapper[data-open] .sm-logo-img {
     filter: invert(100%);
+  }
+
+  .staggered-menu-wrapper[data-open] .sm-toggle {
+    color: #000000 !important;
   }
 }
 
@@ -349,5 +358,9 @@
 
   .staggered-menu-wrapper[data-open] .sm-logo-img {
     filter: invert(100%);
+  }
+
+  .staggered-menu-wrapper[data-open] .sm-toggle {
+    color: #000000 !important;
   }
 }
