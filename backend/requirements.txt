@@ -1,0 +1,6 @@
+flask
+flask-cors
+python-dotenv
+strands-agents
+strands-agents-tools
+requests
