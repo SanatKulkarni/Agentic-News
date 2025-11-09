@@ -15,6 +15,10 @@
 
 ---
 
+## Deployed Link
+https://agentic-news.vercel.app/
+Backend Deployed Link: https://agentic-news-m83u.onrender.com
+
 ## Overview
 
 DrishtiWave is an intelligent news aggregation platform that leverages agentic AI to transform how you consume news. Instead of drowning in countless articles and headlines, get **AI-curated, structured reports** tailored to your specific needs.
