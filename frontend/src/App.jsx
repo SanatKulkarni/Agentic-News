@@ -13,9 +13,9 @@ function App() {
   ];
 
   const socialLinks = [
-    { label: 'Twitter', link: 'https://twitter.com' },
-    { label: 'LinkedIn', link: 'https://linkedin.com' },
-    { label: 'GitHub', link: 'https://github.com' }
+    { label: 'Twitter', link: 'https://x.com/SanatKulkarni25' },
+    { label: 'LinkedIn', link: 'https://www.linkedin.com/in/sanat-kulkarni/' },
+    { label: 'GitHub', link: 'https://github.com/SanatKulkarni' }
   ];
 
   return (

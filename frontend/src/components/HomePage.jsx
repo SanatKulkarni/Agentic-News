@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Shuffle from '../utils/Shuffle';
 import TrueFocus from '../utils/TrueFocus';
 
 const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="homepage">
       <main className="homepage-content" style={{ position: 'relative', zIndex: 1 }}>
@@ -50,6 +53,33 @@ const HomePage = () => {
               pauseBetweenAnimations={2}
             />
           </div>
+          <button
+            onClick={() => navigate('/news')}
+            style={{
+              marginTop: '3rem',
+              padding: '1rem 3rem',
+              fontSize: '1.2rem',
+              fontWeight: '600',
+              color: '#000000',
+              backgroundColor: '#ffffff',
+              border: 'none',
+              borderRadius: '12px',
+              cursor: 'pointer',
+              transition: 'all 0.3s ease',
+              boxShadow: '0 4px 15px rgba(255, 255, 255, 0.2)',
+              letterSpacing: '0.5px'
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.transform = 'translateY(-3px)';
+              e.target.style.boxShadow = '0 6px 25px rgba(255, 255, 255, 0.4)';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.transform = 'translateY(0)';
+              e.target.style.boxShadow = '0 4px 15px rgba(255, 255, 255, 0.2)';
+            }}
+          >
+            Get Started
+          </button>
         </section>
       </main>
     </div>
