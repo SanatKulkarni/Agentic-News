@@ -1,4 +1,4 @@
-# 🌊 DrishtiWave
+# DrishtiWave: Agentic AI-Powered News Aggregation
 
 <div align="center">
 
@@ -15,23 +15,23 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 DrishtiWave is an intelligent news aggregation platform that leverages agentic AI to transform how you consume news. Instead of drowning in countless articles and headlines, get **AI-curated, structured reports** tailored to your specific needs.
 
-### ✨ Key Features
+### Key Features
 
-- 🤖 **Agentic AI-Powered**: Advanced AI agents intelligently search, analyze, and synthesize news from multiple sources
-- 📊 **Three Report Modes**: Overview, Latest Updates, or Future Forecasts
-- 📝 **Customizable Depth**: Short, Medium, or Detailed reports based on your time and needs
-- 🎨 **Beautiful Markdown Formatting**: Clean, structured reports with proper formatting
-- 📄 **PDF Export**: Download your reports as professional PDFs
-- ⚡ **Lightning Fast**: Built with modern web technologies for optimal performance
-- 🎭 **Stunning Animations**: Smooth, delightful user experience with GSAP animations
+- **Agentic AI-Powered**: Advanced AI agents intelligently search, analyze, and synthesize news from multiple sources
+- **Three Report Modes**: Overview, Latest Updates, or Future Forecasts
+- **Customizable Depth**: Short, Medium, or Detailed reports based on your time and needs
+- **Beautiful Markdown Formatting**: Clean, structured reports with proper formatting
+- **PDF Export**: Download your reports as professional PDFs
+- **Lightning Fast**: Built with modern web technologies for optimal performance
+- **Stunning Animations**: Smooth, delightful user experience with GSAP animations
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
 - **Business Professionals**: Track market trends and competitor activities
 - **Researchers**: Gather comprehensive information on complex topics
@@ -40,7 +40,7 @@ DrishtiWave is an intelligent news aggregation platform that leverages agentic A
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Frontend
 - **React 19.1.1** - Modern UI framework
@@ -60,7 +60,7 @@ DrishtiWave is an intelligent news aggregation platform that leverages agentic A
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -126,7 +126,7 @@ The frontend will start on `http://localhost:5173`
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Agentic-News/
@@ -158,7 +158,7 @@ Agentic-News/
 
 ---
 
-## 🎨 Features in Detail
+## Features in Detail
 
 ### 1. **Smart Report Generation**
 Enter any topic and choose from three intelligence modes:
@@ -210,7 +210,7 @@ Customize report length based on your needs:
 
 ---
 
-## 🌐 API Endpoints
+## API Endpoints
 
 ### `POST /generate_report`
 
@@ -242,13 +242,7 @@ Generate an AI-powered news report.
 
 ---
 
-## 🎥 Demo
-
-Check out our [Video Demo Script](VIDEO_SCRIPT.md) for a comprehensive walkthrough of all features.
-
----
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -260,7 +254,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📝 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
@@ -275,7 +269,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - AWS Bedrock for AI capabilities
 - News API for news aggregation
