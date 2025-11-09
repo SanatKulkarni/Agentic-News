@@ -1,0 +1,72 @@
+# Byte-compiled / caching
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+.tox/
+.nox/
+.coverage
+.pytest_cache/
+htmlcov/
+
+# VS Code / JetBrains / other editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*
+secrets.*
+*.pem
+*.key
+*.crt
+*.p12
+
+# Logs
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python tooling caches
+.mypy_cache/
+.pytest_cache/
+pylint-reports/
+
+# Node
+node_modules/
+
+# Misc
+coverage.xml
+celerybeat-schedule
+
+# Keep the .gitignore itself tracked
+!.gitignore
+
+# Notes:
+# - This ignores virtual environments (including `.venv`) and other common files that
+#   shouldn't be committed. If a virtualenv or secret file was already committed,
+#   see the untracking commands below to remove them from the index without deleting
+#   them locally.

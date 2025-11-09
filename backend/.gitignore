@@ -1,0 +1,16 @@
+# Ignore everything by default
+*
+
+# Allow directories so we can unignore files inside them
+!*/
+
+# Allow all Python files anywhere in this folder tree
+!**/*.py
+
+# Keep this .gitignore tracked
+!.gitignore
+
+# Notes:
+# - This will prevent non-.py files (including secret key files) from being tracked.
+# - If you already committed secrets (e.g. `bedrock api key` or `github access token`),
+#   you'll need to remove them from the index (see commands below).
