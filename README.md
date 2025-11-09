@@ -31,6 +31,18 @@ DrishtiWave is an intelligent news aggregation platform that leverages agentic A
 
 ---
 
+## Demo Video
+
+<div align="center">
+  <a href="https://youtu.be/jhB28tiKep4" target="_blank">
+    <img src="https://img.youtube.com/vi/jhB28tiKep4/maxresdefault.jpg" alt="DrishtiWave Demo Video" style="width:80%; max-width:800px;">
+  </a>
+  
+  **[🎬 Watch Full Demo on YouTube](https://youtu.be/jhB28tiKep4)**
+</div>
+
+---
+
 ## Use Cases
 
 - **Business Professionals**: Track market trends and competitor activities
