@@ -7,7 +7,7 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="homepage">
+    <div className="homepage" style={{ position: 'relative', minHeight: '100vh' }}>
       <main className="homepage-content" style={{ position: 'relative', zIndex: 1 }}>
         <section id="home" className="hero-section" style={{ 
           padding: '100px 20px', 
@@ -82,6 +82,25 @@ const HomePage = () => {
           </button>
         </section>
       </main>
+      
+      {/* Disclaimer Text */}
+      <div style={{
+        position: 'fixed',
+        bottom: '20px',
+        right: '20px',
+        fontSize: '0.75rem',
+        color: '#999999',
+        maxWidth: '250px',
+        textAlign: 'right',
+        lineHeight: '1.4',
+        zIndex: 50,
+        backgroundColor: 'rgba(19, 19, 19, 0.8)',
+        padding: '8px 12px',
+        borderRadius: '6px',
+        backdropFilter: 'blur(10px)'
+      }}>
+        Currently running on free resources. Please try again after some time if HTTP Request: 500
+      </div>
     </div>
   );
 };
